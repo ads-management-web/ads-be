@@ -2,8 +2,8 @@
 
 create table users (
                        id serial primary key,
-                       email varchar(255),
-                       phone varchar(15),
+                       email varchar(255) unique,
+                       phone varchar(15) unique,
                        birthday timestamptz,
                        role varchar(50),
                        name varchar(255),
